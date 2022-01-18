@@ -28,29 +28,3 @@ def add_csv_data(data_file, data):
 base_folder = Path(__file__).parent.resolve()
 data_file = base_folder/'data.csv'
 create_csv(data_file)
-
-
-'''
-Questo ciclo può essere un calco tramite il quale si può creare la funzione main
-
-from time import sleep
-from datetime import datetime, timedelta
-
-# Record the start and current time
-start_time = datetime.now()
-now_time = datetime.now()
-
-# Run a loop for three hours
-while (now_time < start_time + timedelta(minutes=180)):
-    if light == 'Light':
-        # funzione capture
-        row = (datetime.now(), location.latitude.signed_dma, location.longitude.signed_dms, location.elevation.km, sense.temperature, sense.humidity)
-        'row = (datetime.now(), location.latitude.degrees, location.longitude.degrees, location.elevation.km, sense.temperature, sense.humidity)'
-        add_csv_data(data_file, row)
-        sleep(30)
-        # Update the current time
-        now_time = datetime.now()
-  
-  
-     
-'''
